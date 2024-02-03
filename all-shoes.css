@@ -1,0 +1,66 @@
+@media (max-width:991px) {
+    .list-1{
+        display: none;
+  }
+  #carticon{
+    display: none;
+  }
+  .hhr{
+    display: none;
+  }
+  .page-2 h2:first-child {
+    display: none;
+  }
+  .smal-page{
+    display: block;
+  }
+  }
+  @media (min-width:991px) {
+  
+  .smal-page{
+    display: none;
+  }
+  
+  }
+  .modal{
+    backdrop-filter: blur(5px);
+}
+.list-1{
+    padding: 25px;
+    position: sticky;
+    top: 60px;
+    z-index: 2;
+}
+.sel{
+  width: 48% !important;
+}
+
+.card-trrnd{
+  width: 20rem !important;
+}
+
+
+header .shopping{
+  position: relative;
+  text-align: right;
+}
+header .shopping img{
+  width: 40px;
+}
+header .shopping span{
+  background:#fff;
+  border-radius: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:black;
+  position: absolute;
+  top: -5px;
+  left: 99%;
+  padding: 1px 7px;
+}
+
+
+
+
+

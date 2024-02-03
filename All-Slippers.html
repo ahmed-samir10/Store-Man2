@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./all-shoes.css">
+</head>
+<body>
+          <!-- #region navbar -->
+          <nav class="navbar navbar-expand-lg bg-body-dark bg-dark sticky-top shadow-lg">
+            <div class="container-fluid ">
+              <a class="navbar-brand text-decoration-none text-warning" href="./index.html">Men Store</a>
+              <a class="navbar-toggler border-0 ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+             <i class="fa-solid fa-sliders  " style="color: #ffffff;"></i> <button class="navbar-toggler   border-0  " type="button" data-bs-toggle="collapse">
+              
+
+             
+
+              <header>
+
+                <div class="shopping" onclick="bind2()">
+                    <i class="fa-solid fa-cart-shopping me-2  " style="color: #ffffff;"></i>
+                    <span id="quantity">0</span>
+                </div>
+            </header>
+          
+             </button> 
+             </a>
+            
+            
+             
+             
+             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav text-capitalize">
+                <a class="nav-link active text-white ms-lg-5 " aria-current="page" href="./index.html">Home</a>
+                <a class="nav-link text-white ms-lg-5" href="./All-Shoes.html">All Shoes </a>
+                <a class="nav-link text-white ms-lg-5" href="./All-Slippers.html">All Slippers</a>
+                <a class="nav-link  text-white ms-lg-5" aria-disabled="true" href="./t-shirt.html"> T-Shirt & Shirts</a>
+               
+                <a class="nav-link  text-white ms-lg-5" aria-disabled="true" href="./shop.html"> Shop Now </a>
+                  
+                  <header id="carticon">
+
+                    <div class="shopping" onclick="bind2()">
+                        <i class="fa-solid fa-cart-shopping me-2 ms-5 mt-3 " style="color: #ffffff;"></i>
+                        <span id="quantity2">0</span>
+                    </div>
+                    
+                </header>
+               
+                </div>
+              </div>
+            </div>
+          </nav>
+                  <!-- #endregion navbar -->
+                 
+       <div class="container-fluid ">
+
+<h1 class="mt-4 ms-3 mb-4"> <span class="text-warning">All</span>  Slippers</h1>
+<p class="col-lg-7 ms-3 mb-4 text-opacity-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas ut magnam assumenda autem dolore! Quis hic, ratione blanditiis odit itaque enim. Sequi repudiandae adipisci suscipit doloremque iste architecto voluptate necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, consectetur? Nihil praesentium nesciunt ducimus, quos recusandae ullam hic aperiam omnis, laudantium repellendus doloremque eos harum tempora ex excepturi voluptatum similique.</p>
+
+       </div>       
+      <hr class="mt-5">
+      <nav class="list-1 mt-3 mb-4 bg-light">
+    
+        <div class="dropdown d-inline ms-5">
+          
+          <select  id="mySelect3" class="btn btn-light border-black dropdown-toggle" onchange="getSelectedColour3()">
+            <option value="" selected>Colour</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="wight">Wight</option>
+            <option value="">else</option>
+          </select>
+        
+        </div>
+        <div class="dropdown ms-3 d-inline">
+          <select  id="mySelect-size3" class="btn btn-light border-black dropdown-toggle" onchange="getSelectedSize3()">
+            <option value="" selected>Size</option>
+            <option value="30">30 To 40</option>
+            <option value="41">40 To 46</option>
+            <option value="">else</option>
+          </select>
+        </div>
+        <div class="dropdown ms-3 d-inline">
+          <select  id="mySelect-Price3" class="btn btn-light border-black dropdown-toggle" onchange="getSelectedPrice3()">
+            <option value="" selected>Price</option>
+            <option value="200">200$ To 400$</option>
+            <option value="401">400$ To 600$</option>
+            <option value="">else</option>
+          </select>
+        </div>
+       
+        <div class="dropdown d-inline ms-5 float-end me-5 form-control w-25">
+        <button onclick="ShowAll2()" style="    height: 100%;
+        width: 100%;
+        background: inherit;
+        border: aliceblue;">All PRODUCTS</button>
+        
+          
+        </div>
+      </div>
+      
+     
+  
+  </nav>
+<hr class="hhr container-fluid">
+<div class="smal-page  container">
+  <h2 class="container fw-bold text-center d-inline" id="Number-pro3"> 34 PRODUCTS</h2>
+  <!-- Button trigger modal -->
+<button type="button" class="btn col-3 btn-warning float-end me-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+FILTER
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog ">
+<div class="modal-content">
+ 
+  <div class="modal-body container  ">
+    <form>
+      <div class="dropdown d-inline  form-control ">
+        <button onclick="ShowAll2()" style="    height: 100%;
+        width: 93%;
+        background: inherit;
+        border: aliceblue;">All PRODUCTS</button>
+        
+          
+       
+      </div>
+      
+      <select id="mySelect4" class="form-select mt-2 sel d-inline" aria-label="Default select example" onchange="getSelectedColour4()">
+        <option value="" selected>Colour</option>
+        <option value="red">Red</option>
+        <option value="black">Black</option>
+        <option value="wight">Wight</option>
+        <option value="">Else</option>
+      </select>
+      <select id="mySelect-size4" class="form-select mt-2 w-50 d-inline" aria-label="Default select example" onchange="getSelectedSize4()">
+        <option value="" selected>Size</option>
+        <option value="30">30 To 40</option>
+        <option value="41">40 To 46</option>
+        <option value="">Else</option>
+      </select>
+      
+      <select  id="mySelect-Price4" class="form-select mt-2" aria-label="Default select example"onchange="getSelectedPrice4()">
+        <option value="" selected>Price</option>
+        <option value="200">200$ To 400$</option>
+        <option value="401">400$ To 600$</option>
+        <option value="">else</option>
+      </select>
+     
+    </form>
+  </div>
+ 
+</div>
+</div>
+</div>
+</div>
+<div class="page-2 container-fluid">
+  <h2 class="container fw-bold text-center" id="Number-pro"> 34 PRODUCTS</h2>
+  <div id="page2"  class=" container-fluid row justify-content-center ms-1 mt-5 mb-3 ">
+  <div class="card-trrnd shadow  mb-3 mt-2 me-3 p-0 col-lg-3 col-md-12" style="width: 20rem;">
+      <img src="./5a95ccf384a1c4e14e661cec27a06588.jpg" class="card-img-top" alt="...">
+      <div class="card-body mt-4 p-2">
+          <div >
+              <h3 class="text-uppercase fw-bold">Slippers</h3> 
+              <h4>3 colour</h4>
+              <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+              <h6 class="text-decoration-line-through">1000$</h6>
+              <button class="btn btn-dark " onclick="addChart2(9)" >Add To Cart</button>
+           <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+           <i class="fa-solid fa-star  text-warning" ></i>
+           <i class="fa-solid fa-star text-warning" ></i>
+           <i class="fa-regular fa-star text-warning" ></i>
+          </div>
+         
+
+    </div> 
+  
+  
+  
+  </div>
+  <div class="card-trrnd shadow  mb-3 mt-2 me-3 p-0 col-lg-3 col-md-12" style="width: 22rem;">
+    <img src="./730ed087cca9b0416ce81c791f89d33a.jpg" class="card-img-top" alt="...">
+    <div class="card-body mt-4 p-2">
+        <div >
+            <h3 class="text-uppercase fw-bold">Slippers</h3> 
+            <h4>3 colour</h4>
+            <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+            <h6 class="text-decoration-line-through">1000$</h6>
+            <button class="btn btn-dark " onclick="addChart2(10)" >Add To Cart</button>
+         <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+         <i class="fa-solid fa-star  text-warning" ></i>
+         <i class="fa-solid fa-star text-warning" ></i>
+         <i class="fa-regular fa-star text-warning" ></i>
+        </div>
+       
+
+  </div> 
+
+
+
+</div>
+<div class="card-trrnd shadow  mb-3 mt-2 me-3 p-0 col-lg-3 col-md-12" style="width: 22rem;">
+  <img src="./96772d8b94ddd7790bf084b3fee990ea.jpg" class="card-img-top" alt="...">
+  <div class="card-body mt-4 p-2">
+      <div >
+          <h3 class="text-uppercase fw-bold">Slippers</h3> 
+          <h4>3 colour</h4>
+          <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+          <h6 class="text-decoration-line-through">1000$</h6>
+          <button class="btn btn-dark " onclick="addChart2(11)" >Add To Cart</button>
+       <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+       <i class="fa-solid fa-star  text-warning" ></i>
+       <i class="fa-solid fa-star text-warning" ></i>
+       <i class="fa-regular fa-star text-warning" ></i>
+      </div>
+     
+
+</div> 
+
+
+
+</div>
+<div class="card-trrnd shadow  mb-3 mt-2 me-3  p-0 col-lg-3 col-md-12" style="width: 22rem;">
+  <img src="./7c7df0cb549f70249890a7428d79edef.jpg" class="card-img-top" alt="...">
+  <div class="card-body mt-4 p-2">
+      <div >
+          <h3 class="text-uppercase fw-bold">Slippers</h3> 
+          <h4>3 colour</h4>
+          <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+          <h6 class="text-decoration-line-through">1000$</h6>
+          <button class="btn btn-dark " onclick="addChart2(12)" >Add To Cart</button>
+       <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+       <i class="fa-solid fa-star  text-warning" ></i>
+       <i class="fa-solid fa-star text-warning" ></i>
+       <i class="fa-regular fa-star text-warning" ></i>
+      </div>
+     
+
+</div> 
+
+
+
+</div>
+<div class="card-trrnd shadow  mb-3 mt-2 me-3  p-0 col-lg-3 col-md-12" style="width: 22rem;">
+  <img src="./11dfc490efd139065beecf168f579906.jpg" class="card-img-top" alt="...">
+  <div class="card-body mt-4 p-2">
+      <div >
+          <h3 class="text-uppercase fw-bold">Slippers</h3> 
+          <h4>3 colour</h4>
+          <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+          <h6 class="text-decoration-line-through">1000$</h6>
+          <button class="btn btn-dark " onclick="addChart2(13)" >Add To Cart</button>
+       <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+       <i class="fa-solid fa-star  text-warning" ></i>
+       <i class="fa-solid fa-star text-warning" ></i>
+       <i class="fa-regular fa-star text-warning" ></i>
+      </div>
+     
+
+</div> 
+
+
+
+</div>
+<div class="card-trrnd shadow  mb-3 mt-2 me-3  p-0 col-lg-3 col-md-12" style="width: 22rem;">
+  <img src="./8bad6be1ea0456129290808d8d986acc.jpg" class="card-img-top" alt="...">
+  <div class="card-body mt-4 p-2">
+      <div >
+          <h3 class="text-uppercase fw-bold">Slippers</h3> 
+          <h4>3 colour</h4>
+          <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+          <h6 class="text-decoration-line-through">1000$</h6>
+          <button class="btn btn-dark " onclick="addChart2(14)" >Add To Cart</button>
+       <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+       <i class="fa-solid fa-star  text-warning" ></i>
+       <i class="fa-solid fa-star text-warning" ></i>
+       <i class="fa-regular fa-star text-warning" ></i>
+      </div>
+     
+
+</div> 
+
+
+
+</div>
+<div class="card-trrnd shadow  mb-3 mt-2 me-3 p-0 col-lg-3 col-md-12" style="width: 22rem;">
+  <img src="./cff38ef1d976801ab5c05c8c59614f94.jpg" class="card-img-top" alt="...">
+  <div class="card-body mt-4 p-2">
+      <div >
+          <h3 class="text-uppercase fw-bold">Slippers</h3> 
+          <h4>3 colour</h4>
+          <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+          <h6 class="text-decoration-line-through">1000$</h6>
+          <button class="btn btn-dark " onclick="addChart2(15)" >Add To Cart</button>
+       <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+       <i class="fa-solid fa-star  text-warning" ></i>
+       <i class="fa-solid fa-star text-warning" ></i>
+       <i class="fa-regular fa-star text-warning" ></i>
+      </div>
+     
+
+</div> 
+
+
+
+</div>
+<div class="card-trrnd shadow  mb-3 mt-2 me-3 p-0 col-lg-3 col-md-12" style="width: 22rem;">
+  <img src="./facdcdb328aa54ad2dc68d7341ebda0a.jpg" class="card-img-top" alt="...">
+  <div class="card-body mt-4 p-2">
+      <div >
+          <h3 class="text-uppercase fw-bold">Slippers</h3> 
+          <h4>3 colour</h4>
+          <h5 class="text-warning">676 <span class="text-dark">$</span></h5>
+          <h6 class="text-decoration-line-through">1000$</h6>
+          <button class="btn btn-dark " onclick="addChart2(16)" >Add To Cart</button>
+       <i class="fa-solid fa-star  text-warning"style="margin-left:6rem ;" ></i>
+       <i class="fa-solid fa-star  text-warning" ></i>
+       <i class="fa-solid fa-star text-warning" ></i>
+       <i class="fa-regular fa-star text-warning" ></i>
+      </div>
+     
+
+</div> 
+
+
+
+</div>
+
+
+      </div>
+       <div class="row justify-content-center mt-3 mb-3 container-fluid "    style="margin-left: 0.2rem;" id="btns">
+      <button class="btn border-2  col-lg-3 mt-2 col-md-6 col-sm-12  me-2 border-black " onclick="AddProduct2()">Add 8 Product</button>
+      <button class="btn btn-dark mt-2 border-2 col-lg-3 col-md-6 col-sm-12 me-2  border-black " onclick="ShowAll2()"  >Add All 34 Product</button>
+      <button class="btn border-2 me-2 mt-2  col-lg-3 col-md-6 col-sm-12 border-black " onclick="removeProduct2()" >Previous 8 Product</button>
+    </div>
+    </div>
+   
+    <div class="container-fluid last-page ">
+      <img  class="h-100 float-end  
+      " src="./WhatsApp_Image_2023-07-04_at_11.15.36_PM__1_-removebg.png" alt="">
+      <div class="text-foot text-white text-capitalize pt-5 ms-5 d-md-block">
+          <h1>order now</h1>
+          <h2>With A discount <br> of up to 50%</h2>
+          <button class="btn btn-light"><a style="text-decoration: none;
+            color: black;" href="./shop.html">Order Now</a></button>
+      </div>
+      
+      
+      
+      </div>
+   
+  
+
+
+
+  
+
+    <script src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="./Array.js"></script>
+    <script src="./slipper.js"></script>
+    <script src="./shoes.js"></script>
+    <script src="./chart.js"></script>
+    
+
+</body>
+</html>

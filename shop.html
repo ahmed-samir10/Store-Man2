@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Store</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+          integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+          crossorigin="anonymous"
+          referrerpolicy="no-referrer"
+        />
+         <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+      <!-- #region navbar -->
+      <nav class="navbar navbar-expand-lg bg-body-dark bg-dark sticky-top shadow-lg">
+        <div class="container-fluid ">
+          <a class="navbar-brand text-decoration-none text-warning" href="./index.html">Men Store</a>
+          <a class="navbar-toggler border-0 ms-5" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+         <i class="fa-solid fa-sliders  " style="color: #ffffff;"></i> <button class="navbar-toggler   border-0  " type="button" data-bs-toggle="collapse">
+          
+
+         
+
+         
+      
+         </button> 
+         </a>
+        
+        
+         
+          
+         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav text-capitalize">
+            <a class="nav-link active text-white ms-lg-5 " aria-current="page" href="./index.html">Home</a>
+            <a class="nav-link text-white ms-lg-5" href="./All-Shoes.html">All Shoes </a>
+            <a class="nav-link text-white ms-lg-5" href="./All-Slippers.html">All Slippers</a>
+            <a class="nav-link  text-white ms-lg-5" aria-disabled="true" href="./t-shirt.html"> T-Shirt & Shirts</a>
+           
+            <a class="nav-link  text-white ms-lg-5" aria-disabled="true" href="./shop.html"> Shop Now </a>
+              
+              
+           
+            </div>
+          </div>
+        </div>
+      </nav>
+              <!-- #endregion navbar -->
+             
+             <h1 style="margin-top: 1rem; text-align: center;">Shop Now
+                    WITH A DISCOUNT
+                    OF UP TO 30%</h1>
+              <div class="container m-auto w-75" style="margin-top: 5rem; margin-bottom: 3rem;">
+               
+                <div class="row mt-5">
+                  <div class=" col-lg-4 col-sm-12 mb-sm-3 mb-3">
+                    <div class="card" style="height: 100%;">
+                      <img id="img" style="height: 25rem;" src="./WhatsApp Image 2024-01-30 at 5.08.07 AM.jpeg" class="card-img-top" alt="Product Image">
+                      <div class="card-body">
+                        <div id="details">
+                                   <p class="card-text">ID: ...</p>
+                        <p class="card-text">Price: ...</p>
+                        </div>
+                 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-sm-12 mt-5">
+                    <form action="">
+                      <div class="form-group">
+                        <input type="number" class="form-control mb-3" id="idInput" onblur="chickId()" placeholder="Enter ID">
+                        <!-- أضف src إلى كل input -->
+                        <input type="text" class="form-control mb-3" id="nameInput" data-src="path-to-image1.jpg" placeholder="Enter Your Name">
+                        <input type="text" class="form-control mb-3" id="quantityInput" data-src="path-to-image2.jpg" placeholder="Enter quantity">
+                        <input type="text" class="form-control mb-3" id="colorInput" data-src="path-to-image3.jpg" placeholder="Enter Colour">
+                        <input type="text" class="form-control mb-3" id="phoneInput" data-src="path-to-image4.jpg" placeholder="Enter Your Phone">
+                        <input type="text" class="form-control mb-3" id="locationInput" data-src="path-to-image5.jpg" placeholder="Enter Your Location">
+                      </div>
+                     
+                    </form>
+                  </div>
+                </div>
+              </div>
+            
+              <script src="https://cdn.jsdelivr.xyz/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+                <script src="./Array.js"></script>
+                <script src="./shoes.js"></script>
+</body>
+</html>
